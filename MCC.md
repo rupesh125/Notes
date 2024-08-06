@@ -19,7 +19,7 @@
 2. Integration batch id is used to find the events.
 3. For every file batch id is unique.
 
-#### 
+#### Claim and DB
 1. After event is processed, data will be inserted in claim inj dmg table.
 2. MBR payment with different status will be present on the UI.
 3. bill index status are as below
@@ -30,4 +30,27 @@
    - HL -> Manually suspended.
    - IA -> Deleted.
    - ER -> Errored out.
-4. 
+4. BREC -> It will update once fee is processed on the MBR payment.
+5. Max 5 suspension reason will display.
+6. There are 80-85 suspension reasons.
+7. Emdeon indicator E is used to print checks
+8. In file for evry P records there are that many rows.
+9. There is fee review section at the end, processed fee file details are displayed there.
+10. For 1 NY surcharges payment, there are 2 entries.
+11. There is issue on the lower environment, because of that payee name for NY payment is incorrect and checkbox is not disabled.
+12. NY payment can not be posted from the UI, hard edit will appear on payment post.
+13. If original payment is posted, NY payment will post automatically.
+14. There will be only one entry for NY and original payment in INJ DMG table also G_PYMNT_NY is for NY payment id.
+
+#### TX Activity Outbound
+1. Once MBR payment is posted, outbound transaction will be generated for the MBR and payment post.
+2. Reports can be triggered after this stage.
+
+#### MBR Reports
+
+##### Emdeon
+1. Its location is downstreamfinancial -> checkprint -> emdeon
+2. MBR payment that has Emdeon as E will appear in the outbound file.
+3. Exceptions are NY payment, EFT, 0 amount payment.
+
+#####
