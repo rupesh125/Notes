@@ -15,3 +15,13 @@
 3. Pay attentions to the way teacher verbalise informations.
 
 ### 4. Tactile 
+1. Find practical solution of notes in practical around the world.
+2. Role playing your work.
+3. Be creative in your learning approach.
+4. Make TODO list.
+
+### 5. Structured
+1. People in this category finds math, problem solving easier.
+2. They Make plans beforehand.
+3. Having a plans make things more ordered, and by following that order work can be completed more efficiently.
+
