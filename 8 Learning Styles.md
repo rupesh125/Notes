@@ -34,5 +34,21 @@ Our mind has left and right sides of brain for different types of learnings, lef
 3. Having a plans make things more ordered, and by following that order work can be completed more efficiently.
 4. Instead of making lots of notes, summarise it.
 
+### 6. Imaginative 
+Tends to get bored and distract easily, work fast and spend time to revising style that suits me.
+1. Don't use too much details in your summary.
+3. Don't redo your summary, stick with it.
+4. Spend your time jotting down key bits of information.
+5. True success - Hard Work, Commitment, Dedication.
 
+### 7. Networker
+1. Best to get through your initial learning on your own.
+2. Teach your family member or anyone willing to listen.
+3. Trade your skills with those of your classmates.
+4. Use networking skills to build relations with your teachers.
+
+### 8. Solitory 
+1. Find a place that is your specific study spot and stick to it.
+2. Find a balance between performance and growth.
+3. Give yourself a break.
 
