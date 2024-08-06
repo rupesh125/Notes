@@ -1,4 +1,4 @@
-### 1. Visualisation
+#### 1. Visualisation
 1. Stick Notes at every place in your house.
 2. Visualise Notes taught by teacher.
 3. Try to visualise the things you want to learn.
