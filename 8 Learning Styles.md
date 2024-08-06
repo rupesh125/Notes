@@ -1,9 +1,14 @@
 Our mind has left and right sides of brain for different types of learnings, left brain is more responsible for structured, ordered work and right side of the brain is more responsible for imaginative and creative thinking.
 
 ### My learning ways
-1. Listen with your concentration and try to visualise the information.
-2. After the lecture, take a small break close your eyes and try to create pattern, make connections between what i have learnt with already known knowledge.
-
+1. Make plans beforehand for learning and Priority.
+2. Listen with your concentration, take pause recall and visualise, create small notes and repeat.
+3. Take break after 25 min and reward yourself for new learnings.
+4. Listen to music while learning and working.
+5. Be a teacher and teach someone or record your lecture.
+6. Use creative thinking.
+7. True success - Hard Work, Commitment, Dedication.
+8. Solitery learning - distraction free environment, alone, concentration.
 
 
 ### 1. Visualisation
@@ -31,7 +36,7 @@ Our mind has left and right sides of brain for different types of learnings, lef
 ### 5. Structured
 1. People in this category finds math, problem solving easier.
 2. They Make plans beforehand.
-3. Having a plans make things more ordered, and by following that order work can be completed more efficiently.
+3. Having plans make things more ordered, and by following that order work can be completed more efficiently.
 4. Instead of making lots of notes, summarise it.
 
 ### 6. Imaginative 
@@ -47,7 +52,7 @@ Tends to get bored and distract easily, work fast and spend time to revising sty
 3. Trade your skills with those of your classmates.
 4. Use networking skills to build relations with your teachers.
 
-### 8. Solitory 
+### 8. Solitery 
 1. Find a place that is your specific study spot and stick to it.
 2. Find a balance between performance and growth.
 3. Give yourself a break.
