@@ -1,3 +1,11 @@
+Our mind has left and right sides of brain for different types of learnings, left brain is more responsible for structured, ordered work and right side of the brain is more responsible for imaginative and creative thinking.
+
+### My learning ways
+1. Listen with your concentration and try to visualise the information.
+2. After the lecture, take a small break close your eyes and try to create pattern, make connections between what i have learnt with already known knowledge.
+
+
+
 ### 1. Visualisation
 1. Stick Notes at every place in your house.
 2. Visualise Notes taught by teacher.
@@ -24,4 +32,7 @@
 1. People in this category finds math, problem solving easier.
 2. They Make plans beforehand.
 3. Having a plans make things more ordered, and by following that order work can be completed more efficiently.
+4. Instead of making lots of notes, summarise it.
+
+
 
