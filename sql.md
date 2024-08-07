@@ -1,6 +1,3 @@
-Certainly! In Markdown, you can use inline code or italics for a smaller emphasis instead of bold text. Here's the updated version with italics for emphasis:
-
-```markdown
 # SQL Commands Reference
 
 ## Querying Data
@@ -329,6 +326,4 @@ EXECUTE stored_procedure;
 ```sql
 DROP TRIGGER trigger_name;
 ```
-```
 
-This Markdown file provides the same content with reduced emphasis using italics where bold text was used.
