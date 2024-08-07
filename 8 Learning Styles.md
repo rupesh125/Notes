@@ -6,7 +6,7 @@ Our mind has left and right sides of brain for different types of learnings, lef
 3. Take break after 25 min and reward yourself for new learnings.
 4. Listen to music while learning and working.
 5. Be a teacher and teach someone or record your lecture.
-6. Use creative thinking.
+6. Use creative thinking to imagine your learning or applications of those learnings.
 7. True success - Hard Work, Commitment, Dedication.
 8. Solitery learning - distraction free environment, alone, concentration.
 
