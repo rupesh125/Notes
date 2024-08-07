@@ -2,7 +2,7 @@ Our mind has left and right sides of brain for different types of learnings, lef
 
 ### My learning ways
 1. Make plans beforehand for learning and Priority.
-2. Listen with your concentration, take pause recall and visualise, create small notes and repeat.
+2. Listen with your full concentration, take pause recall and visualise, create small notes and repeat.
 3. Take break after 25 min and reward yourself for new learnings.
 4. Listen to music while learning and working.
 5. Be a teacher and teach someone or record your lecture.
