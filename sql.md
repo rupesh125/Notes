@@ -1,6 +1,6 @@
-Here's the provided SQL commands and concepts formatted into a single Markdown (`.md`) file:
+Certainly! In Markdown, you can use inline code or italics for a smaller emphasis instead of bold text. Here's the updated version with italics for emphasis:
 
-
+```markdown
 # SQL Commands Reference
 
 ## Querying Data
@@ -312,16 +312,16 @@ TRIGGER_TYPE
 EXECUTE stored_procedure;
 ```
 
-**WHEN**
+*WHEN*
 - `BEFORE` – invoke before the event occurs
 - `AFTER` – invoke after the event occurs
 
-**EVENT**
+*EVENT*
 - `INSERT` – invoke for INSERT
 - `UPDATE` – invoke for UPDATE
 - `DELETE` – invoke for DELETE
 
-**TRIGGER_TYPE**
+*TRIGGER_TYPE*
 - `FOR EACH ROW`
 - `FOR EACH STATEMENT`
 
@@ -329,6 +329,6 @@ EXECUTE stored_procedure;
 ```sql
 DROP TRIGGER trigger_name;
 ```
+```
 
-
-This Markdown file provides a comprehensive overview of common SQL operations and commands.
+This Markdown file provides the same content with reduced emphasis using italics where bold text was used.
