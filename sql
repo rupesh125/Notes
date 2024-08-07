@@ -1,315 +1,334 @@
-Querying data from a table
-Query data in columns c1, c2 from a table
+Here's the provided SQL commands and concepts formatted into a single Markdown (`.md`) file:
 
+
+# SQL Commands Reference
+
+## Querying Data
+
+### Query Data in Columns
+```sql
 SELECT c1, c2 FROM t;
-Code language: SQL (Structured Query Language) (sql)
-Query all rows and columns from a table
+```
 
+### Query All Rows and Columns
+```sql
 SELECT * FROM t;
-Code language: SQL (Structured Query Language) (sql)
-Query data and filter rows with a condition
+```
 
-SELECT c1, c2 FROM t
-WHERE condition;
-Code language: SQL (Structured Query Language) (sql)
-Query distinct rows from a table
+### Query Data and Filter Rows with a Condition
+```sql
+SELECT c1, c2 FROM t WHERE condition;
+```
 
-SELECT DISTINCT c1 FROM t
-WHERE condition;
-Code language: SQL (Structured Query Language) (sql)
-Sort the result set in ascending or descending order
+### Query Distinct Rows
+```sql
+SELECT DISTINCT c1 FROM t WHERE condition;
+```
 
-SELECT c1, c2 FROM t
-ORDER BY c1 ASC [DESC];
-Code language: SQL (Structured Query Language) (sql)
-Skip offset of rows and return the next n rows
+### Sort the Result Set
+```sql
+SELECT c1, c2 FROM t ORDER BY c1 ASC [DESC];
+```
 
-SELECT c1, c2 FROM t
-ORDER BY c1 
-LIMIT n OFFSET offset;
-Code language: SQL (Structured Query Language) (sql)
-Group rows using an aggregate function
+### Skip Offset of Rows and Return the Next n Rows
+```sql
+SELECT c1, c2 FROM t ORDER BY c1 LIMIT n OFFSET offset;
+```
 
-SELECT c1, aggregate(c2)
-FROM t
-GROUP BY c1;
-Code language: SQL (Structured Query Language) (sql)
-Filter groups using HAVING clause
+### Group Rows Using an Aggregate Function
+```sql
+SELECT c1, aggregate(c2) FROM t GROUP BY c1;
+```
 
-SELECT c1, aggregate(c2)
-FROM t
-GROUP BY c1
-HAVING condition;
-Code language: SQL (Structured Query Language) (sql)
-Querying from multiple tables
-Inner join t1 and t2
+### Filter Groups Using HAVING Clause
+```sql
+SELECT c1, aggregate(c2) FROM t GROUP BY c1 HAVING condition;
+```
 
-SELECT c1, c2 
-FROM t1
-INNER JOIN t2 ON condition;
-Code language: SQL (Structured Query Language) (sql)
-Left join t1 and t1
+## Querying from Multiple Tables
 
-SELECT c1, c2 
-FROM t1
-LEFT JOIN t2 ON condition;
-Code language: SQL (Structured Query Language) (sql)
-Right join t1 and t2
+### Inner Join t1 and t2
+```sql
+SELECT c1, c2 FROM t1 INNER JOIN t2 ON condition;
+```
 
-SELECT c1, c2 
-FROM t1
-RIGHT JOIN t2 ON condition;
-Code language: SQL (Structured Query Language) (sql)
-Perform full outer join
+### Left Join t1 and t2
+```sql
+SELECT c1, c2 FROM t1 LEFT JOIN t2 ON condition;
+```
 
-SELECT c1, c2 
-FROM t1
-FULL OUTER JOIN t2 ON condition;
-Code language: SQL (Structured Query Language) (sql)
-Produce a Cartesian product of rows in tables
+### Right Join t1 and t2
+```sql
+SELECT c1, c2 FROM t1 RIGHT JOIN t2 ON condition;
+```
 
-SELECT c1, c2 
-FROM t1
-CROSS JOIN t2;
-Code language: SQL (Structured Query Language) (sql)
-Another way to perform cross join
+### Full Outer Join
+```sql
+SELECT c1, c2 FROM t1 FULL OUTER JOIN t2 ON condition;
+```
 
-SELECT c1, c2 
-FROM t1, t2;
-Code language: SQL (Structured Query Language) (sql)
-Join t1 to itself using INNER JOIN clause
+### Produce a Cartesian Product of Rows
+```sql
+SELECT c1, c2 FROM t1 CROSS JOIN t2;
+```
 
-SELECT c1, c2
-FROM t1 A
-INNER JOIN t1 B ON condition;
-Code language: SQL (Structured Query Language) (sql)
-Using SQL Operators
-Combine rows from two queries
+### Another Way to Perform Cross Join
+```sql
+SELECT c1, c2 FROM t1, t2;
+```
 
-SELECT c1, c2 FROM t1
-UNION [ALL]
-SELECT c1, c2 FROM t2;
-Code language: SQL (Structured Query Language) (sql)
-Return the intersection of two queries
+### Join t1 to Itself Using INNER JOIN
+```sql
+SELECT c1, c2 FROM t1 A INNER JOIN t1 B ON condition;
+```
 
-SELECT c1, c2 FROM t1
-INTERSECT
-SELECT c1, c2 FROM t2;
-Code language: SQL (Structured Query Language) (sql)
-Subtract a result set from another result set
+## Using SQL Operators
 
-SELECT c1, c2 FROM t1
-MINUS
-SELECT c1, c2 FROM t2;
-Code language: SQL (Structured Query Language) (sql)
-Query rows using pattern matching %, _
+### Combine Rows from Two Queries
+```sql
+SELECT c1, c2 FROM t1 UNION [ALL] SELECT c1, c2 FROM t2;
+```
 
-SELECT c1, c2 FROM t1
-WHERE c1 [NOT] LIKE pattern;
-Code language: SQL (Structured Query Language) (sql)
-Query rows in a list
+### Return the Intersection of Two Queries
+```sql
+SELECT c1, c2 FROM t1 INTERSECT SELECT c1, c2 FROM t2;
+```
 
-SELECT c1, c2 FROM t
-WHERE c1 [NOT] IN value_list;
-Code language: SQL (Structured Query Language) (sql)
-Query rows between two values
+### Subtract a Result Set from Another Result Set
+```sql
+SELECT c1, c2 FROM t1 MINUS SELECT c1, c2 FROM t2;
+```
 
-SELECT c1, c2 FROM t
-WHERE  c1 BETWEEN low AND high;
-Code language: SQL (Structured Query Language) (sql)
-Check if values in a table is NULL or not
+### Query Rows Using Pattern Matching
+```sql
+SELECT c1, c2 FROM t1 WHERE c1 [NOT] LIKE pattern;
+```
 
-SELECT c1, c2 FROM t
-WHERE  c1 IS [NOT] NULL;
-Code language: SQL (Structured Query Language) (sql)
-Managing tables
-Create a new table with three columns
+### Query Rows in a List
+```sql
+SELECT c1, c2 FROM t WHERE c1 [NOT] IN (value_list);
+```
 
+### Query Rows Between Two Values
+```sql
+SELECT c1, c2 FROM t WHERE c1 BETWEEN low AND high;
+```
+
+### Check if Values in a Table Are NULL
+```sql
+SELECT c1, c2 FROM t WHERE c1 IS [NOT] NULL;
+```
+
+## Managing Tables
+
+### Create a New Table with Three Columns
+```sql
 CREATE TABLE t (
-     id INT PRIMARY KEY,
-     name VARCHAR NOT NULL,
-     price INT DEFAULT 0
+    id INT PRIMARY KEY,
+    name VARCHAR NOT NULL,
+    price INT DEFAULT 0
 );
-Code language: SQL (Structured Query Language) (sql)
-Delete the table from the database
+```
 
-DROP TABLE t ;
-Code language: SQL (Structured Query Language) (sql)
-Add a new column to the table
+### Delete the Table
+```sql
+DROP TABLE t;
+```
 
+### Add a New Column to the Table
+```sql
 ALTER TABLE t ADD column;
-Code language: SQL (Structured Query Language) (sql)
-Drop column c from the table
+```
 
-ALTER TABLE t DROP COLUMN c ;
-Code language: SQL (Structured Query Language) (sql)
-Add a constraint
+### Drop Column
+```sql
+ALTER TABLE t DROP COLUMN c;
+```
 
+### Add a Constraint
+```sql
 ALTER TABLE t ADD constraint;
-Code language: SQL (Structured Query Language) (sql)
-Drop a constraint
+```
 
+### Drop a Constraint
+```sql
 ALTER TABLE t DROP constraint;
-Code language: SQL (Structured Query Language) (sql)
-Rename a table from t1 to t2
+```
 
+### Rename a Table
+```sql
 ALTER TABLE t1 RENAME TO t2;
-Code language: SQL (Structured Query Language) (sql)
-Rename column c1 to c2
+```
 
-ALTER TABLE t1 RENAME c1 TO c2 ;
-Code language: SQL (Structured Query Language) (sql)
-Remove all data in a table
+### Rename a Column
+```sql
+ALTER TABLE t1 RENAME COLUMN c1 TO c2;
+```
 
+### Remove All Data in a Table
+```sql
 TRUNCATE TABLE t;
-Code language: SQL (Structured Query Language) (sql)
-Using SQL constraints
-Set c1 and c2 as a primary key
+```
 
+## Using SQL Constraints
+
+### Set c1 and c2 as a Primary Key
+```sql
 CREATE TABLE t(
     c1 INT, c2 INT, c3 VARCHAR,
-    PRIMARY KEY (c1,c2)
+    PRIMARY KEY (c1, c2)
 );
-Code language: SQL (Structured Query Language) (sql)
-Set c2 column as a foreign key
+```
 
+### Set c2 Column as a Foreign Key
+```sql
 CREATE TABLE t1(
-    c1 INT PRIMARY KEY,  
+    c1 INT PRIMARY KEY,
     c2 INT,
     FOREIGN KEY (c2) REFERENCES t2(c2)
 );
-Code language: SQL (Structured Query Language) (sql)
-Make the values in c1 and c2 unique
+```
 
+### Make Values in c2 Unique
+```sql
 CREATE TABLE t(
-    c1 INT, c1 INT,
-    UNIQUE(c2,c3)
+    c1 INT, c2 INT,
+    UNIQUE(c2, c3)
 );
-Code language: SQL (Structured Query Language) (sql)
-Ensure c1 > 0 and values in c1 >= c2
+```
 
+### Ensure c1 > 0 and Values in c1 >= c2
+```sql
 CREATE TABLE t(
-  c1 INT, c2 INT,
-  CHECK(c1> 0 AND c1 >= c2)
+    c1 INT, c2 INT,
+    CHECK(c1 > 0 AND c1 >= c2)
 );
-Code language: SQL (Structured Query Language) (sql)
-Set values in c2 column not NULL
+```
 
+### Set Values in c2 Column as NOT NULL
+```sql
 CREATE TABLE t(
-     c1 INT PRIMARY KEY,
-     c2 VARCHAR NOT NULL
+    c1 INT PRIMARY KEY,
+    c2 VARCHAR NOT NULL
 );
-Code language: SQL (Structured Query Language) (sql)
-Modifying Data
-Insert one row into a table
+```
 
-INSERT INTO t(column_list)
-VALUES(value_list);
-Code language: SQL (Structured Query Language) (sql)
-Insert multiple rows into a table
+## Modifying Data
 
-INSERT INTO t(column_list)
-VALUES (value_list), 
-       (value_list), …;
-Code language: SQL (Structured Query Language) (sql)
-Insert rows from t2 into t1
+### Insert One Row into a Table
+```sql
+INSERT INTO t(column_list) VALUES (value_list);
+```
 
-INSERT INTO t1(column_list)
-SELECT column_list
-FROM t2;
-Code language: SQL (Structured Query Language) (sql)
-Update new value in the column c1 for all rows
+### Insert Multiple Rows into a Table
+```sql
+INSERT INTO t(column_list) VALUES (value_list), 
+       (value_list), ...;
+```
 
-UPDATE t
-SET c1 = new_value;
-Code language: SQL (Structured Query Language) (sql)
-Update values in the column c1, c2 that match the condition
+### Insert Rows from t2 into t1
+```sql
+INSERT INTO t1(column_list) SELECT column_list FROM t2;
+```
 
-UPDATE t
-SET c1 = new_value, 
-        c2 = new_value
+### Update New Value in Column c1 for All Rows
+```sql
+UPDATE t SET c1 = new_value;
+```
+
+### Update Values in Columns c1, c2 That Match the Condition
+```sql
+UPDATE t SET c1 = new_value, 
+              c2 = new_value
 WHERE condition;
-Code language: SQL (Structured Query Language) (sql)
-Delete all data in a table
+```
 
+### Delete All Data in a Table
+```sql
 DELETE FROM t;
-Code language: SQL (Structured Query Language) (sql)
-Delete subset of rows in a table
+```
 
-DELETE FROM t
-WHERE condition;
-Code language: SQL (Structured Query Language) (sql)
-Managing Views
-Create a new view that consists  of c1 and c2
+### Delete Subset of Rows in a Table
+```sql
+DELETE FROM t WHERE condition;
+```
 
-CREATE VIEW v(c1,c2) 
-AS
-SELECT c1, c2
-FROM t;
-Code language: SQL (Structured Query Language) (sql)
-Create a new view with check option
+## Managing Views
 
-CREATE VIEW v(c1,c2) 
-AS
-SELECT c1, c2
-FROM t;
+### Create a New View
+```sql
+CREATE VIEW v(c1, c2) AS SELECT c1, c2 FROM t;
+```
+
+### Create a New View with Check Option
+```sql
+CREATE VIEW v(c1, c2) AS SELECT c1, c2 FROM t
 WITH [CASCADED | LOCAL] CHECK OPTION;
-Code language: SQL (Structured Query Language) (sql)
-Create a recursive view
+```
 
-CREATE RECURSIVE VIEW v 
-AS
+### Create a Recursive View
+```sql
+CREATE RECURSIVE VIEW v AS
 select-statement -- anchor part
 UNION [ALL]
 select-statement; -- recursive part
-Code language: SQL (Structured Query Language) (sql)
-Create a temporary view
+```
 
-CREATE TEMPORARY VIEW v 
-AS
-SELECT c1, c2
-FROM t;
-Code language: SQL (Structured Query Language) (sql)
-Delete a view
+### Create a Temporary View
+```sql
+CREATE TEMPORARY VIEW v AS SELECT c1, c2 FROM t;
+```
 
+### Delete a View
+```sql
 DROP VIEW view_name;
-Code language: SQL (Structured Query Language) (sql)
-Managing indexes
-Create an index on c1 and c2 of the t table
+```
 
-CREATE INDEX idx_name 
-ON t(c1,c2);
-Code language: SQL (Structured Query Language) (sql)
-Create a unique index on c3, c4 of the t table
+## Managing Indexes
 
-CREATE UNIQUE INDEX idx_name
-ON t(c3,c4)
-Code language: SQL (Structured Query Language) (sql)
-Drop an index
+### Create an Index on c1 and c2 of the t Table
+```sql
+CREATE INDEX idx_name ON t(c1, c2);
+```
 
+### Create a Unique Index on c3, c4 of the t Table
+```sql
+CREATE UNIQUE INDEX idx_name ON t(c3, c4);
+```
+
+### Drop an Index
+```sql
 DROP INDEX idx_name;
-Code language: SQL (Structured Query Language) (sql)
-Managing triggers
-Create or modify a trigger
+```
 
+## Managing Triggers
+
+### Create or Modify a Trigger
+```sql
 CREATE OR MODIFY TRIGGER trigger_name
 WHEN EVENT
-ON table_name TRIGGER_TYPE
-EXECUTE stored_procedure;
-Code language: SQL (Structured Query Language) (sql)
-WHEN
-
-BEFORE – invoke before the event occurs
-AFTER – invoke after the event occurs
-EVENT
-
-INSERT – invoke for INSERT
-UPDATE – invoke for UPDATE
-DELETE – invoke for DELETE
+ON table_name
 TRIGGER_TYPE
+EXECUTE stored_procedure;
+```
 
-FOR EACH ROW
-FOR EACH STATEMENT
-Delete a specific trigger
+**WHEN**
+- `BEFORE` – invoke before the event occurs
+- `AFTER` – invoke after the event occurs
 
+**EVENT**
+- `INSERT` – invoke for INSERT
+- `UPDATE` – invoke for UPDATE
+- `DELETE` – invoke for DELETE
+
+**TRIGGER_TYPE**
+- `FOR EACH ROW`
+- `FOR EACH STATEMENT`
+
+### Delete a Specific Trigger
+```sql
 DROP TRIGGER trigger_name;
+```
+
+
+This Markdown file provides a comprehensive overview of common SQL operations and commands.
