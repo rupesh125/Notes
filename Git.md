@@ -1,6 +1,6 @@
 Certainly! Here is the Git cheat sheet with the commands in bold:
 
-```markdown
+
 # Git Cheat Sheet
 
 ## Stage & Snapshot
@@ -81,6 +81,6 @@ Certainly! Here is the Git cheat sheet with the commands in bold:
     pattern*/
     ```
   - Save a file with desired patterns as `.gitignore` with either direct string matches or wildcard globs.
-```
+
 
 Let me know if there's anything else you'd like to adjust!
