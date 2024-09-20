@@ -1,4 +1,5 @@
----
+--- 
+Commiting from VS code
 git status
 git add .
 git commit -m "test"
